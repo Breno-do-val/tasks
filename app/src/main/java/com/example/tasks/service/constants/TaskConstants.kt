@@ -1,7 +1,7 @@
 package com.example.tasks.service.constants
 
 /**
- * Constantes usadas na aplicação
+ * Constants used in application
  */
 class TaskConstants private constructor() {
 
@@ -12,7 +12,7 @@ class TaskConstants private constructor() {
         const val PERSON_NAME = "personname"
     }
 
-    // Requisições API
+    // API Request
     object HEADER {
         const val TOKEN_KEY = "token"
         const val PERSON_KEY = "personkey"
