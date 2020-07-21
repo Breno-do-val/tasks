@@ -1,5 +1,6 @@
 package com.example.tasks.service.repository.local
 
+import android.renderscript.RenderScript
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -10,6 +11,9 @@ interface PriorityDAO {
 
     @Insert
     fun save(list: List<PriorityModel>)
+
+    @Query("SELECT * FROM priority")
+    fun list() : List<PriorityModel>
 
     @Query("DELETE FROM priority")
     fun clear()
