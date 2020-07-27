@@ -15,5 +15,5 @@ class PriorityModel {
 
     @ColumnInfo(name = "description")
     @SerializedName("Description")
-    val description: String = ""
+    var description: String = ""
 }

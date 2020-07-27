@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.DatePicker
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.tasks.R
 import com.example.tasks.service.model.TaskModel
@@ -69,6 +70,14 @@ class TaskFormActivity : AppCompatActivity(), View.OnClickListener, DatePickerDi
 
             val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, list)
             spinner_priority.adapter = adapter
+        })
+        mViewModel.validation.observe(this, androidx.lifecycle.Observer {
+            if (it.success()) {
+                Toast.makeText(this, "Sucesso", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                Toast.makeText(this, it.failure(), Toast.LENGTH_SHORT).show()
+            }
         })
     }
 
