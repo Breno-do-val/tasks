@@ -24,7 +24,7 @@ class RegisterViewModel(application: Application) : AndroidViewModel(application
             override fun onSucess(model: HeaderModel) {
                 mSharedPreferences.store(TaskConstants.SHARED.TOKEN_KEY, model.token)
                 mSharedPreferences.store(TaskConstants.SHARED.PERSON_KEY, model.personKey)
-                mSharedPreferences.store(TaskConstants.SHARED.PERSON_NAME, model.name)
+                mSharedPreferences.store(TaskConstants.SHARED.PERSON_NAME, model.personName)
 
                 mCreate.value = ValidationListener()
             }

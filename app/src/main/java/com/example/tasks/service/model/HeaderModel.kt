@@ -10,6 +10,6 @@ class HeaderModel {
     @SerializedName("personKey")
     var personKey: String = ""
 
-    @SerializedName("name")
-    var name: String = ""
+    @SerializedName("personName")
+    var personName: String = ""
 }

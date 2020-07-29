@@ -34,7 +34,7 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
 
                 mSharedPreferences.store(TaskConstants.SHARED.TOKEN_KEY, model.token)
                 mSharedPreferences.store(TaskConstants.SHARED.PERSON_KEY, model.personKey)
-                mSharedPreferences.store(TaskConstants.SHARED.PERSON_NAME, model.name)
+                mSharedPreferences.store(TaskConstants.SHARED.PERSON_NAME, model.personName)
 
                 RetrofitClient.addHeader(model.token, model.personKey)
                 mLogin.value = ValidationListener()
