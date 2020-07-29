@@ -2,19 +2,20 @@ package com.example.tasks.view
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Gravity
 import android.view.Menu
+import android.widget.TextView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.ui.*
 import com.example.tasks.R
 import com.example.tasks.viewmodel.MainViewModel
 
@@ -46,6 +47,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        mViewModel.loadUserName()
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -64,10 +66,31 @@ class MainActivity : AppCompatActivity() {
 
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        navView.setNavigationItemSelectedListener {
+            if (it.itemId == R.id.nav_logout) {
+                mViewModel.logout()
+            }
+            else {
+                NavigationUI.onNavDestinationSelected(it, navController)
+                drawerLayout.closeDrawer(GravityCompat.START)
+            }
+            true
+        }
     }
 
     private fun observe() {
+        mViewModel.userName.observe(this, Observer {
+            val nav = findViewById<NavigationView>(R.id.nav_view)
+            val header = nav.getHeaderView(0)
 
+            header.findViewById<TextView>(R.id.text_name).text = it
+        })
+
+        mViewModel.logout.observe(this, Observer {
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        })
     }
 
 }
