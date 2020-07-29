@@ -1,5 +1,5 @@
 # Tasks
-Android application using Restful API from [DevMasterTeam](http://devmasterteam.com/cursoandroid/api)for managing tasks.
+Android application using Restful API from [DevMasterTeam](http://devmasterteam.com/cursoandroid/api) for managing tasks.
 
 ##Table of Content
 * [General info](#general-info)
