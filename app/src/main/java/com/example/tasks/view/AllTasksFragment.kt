@@ -79,6 +79,9 @@ class AllTasksFragment : Fragment() {
             if (it.success()) {
                 Toast.makeText(context, getString(R.string.task_removed), Toast.LENGTH_SHORT).show()
             }
+            else {
+                Toast.makeText(context, it.failure(), Toast.LENGTH_SHORT).show()
+            }
         })
     }
 
