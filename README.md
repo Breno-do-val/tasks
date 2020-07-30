@@ -18,18 +18,19 @@ Application developed using Android Architecture Components and applying MVVM (M
 
 ### Technologies and dependencies
  > ROOM - persistence library;
+ 
  > RETROFIT - type-safe HTTP client;
+ 
  > LIVEDATA - observable data holder class and lifecycle aware;
+ 
  > VIEWMODEL - store and manage UI-related data in a lifecycle conscious way;
 
 ### Setup
-``
-applicationId "com.example.tasks"
-        minSdkVersion 21
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
-``
+`` applicationId "com.example.tasks" ``
+`` minSdkVersion 21 ``
+`` targetSdkVersion 29 `` 
+`` versionCode 1 ``
+`` versionName "1.0" ``
 
 #### Author
 Breno Ribeiro do Val
@@ -38,4 +39,4 @@ Breno Ribeiro do Val
 MIT.
 
 #### Acknowledgments
-Thanks to Gabriel Ferrari who provided this course available on Udemy.
+Thanks to Gabriel Ferrari who provided this course, available on [Udemy](https://www.udemy.com/course/curso-desenvolvedor-kotlin).
