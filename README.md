@@ -9,7 +9,7 @@ Android application using Restful API from [DevMasterTeam](http://devmasterteam.
 * [Acknowledgements](#acknowledgements)
 
 ##Screnshoots
-![](/src/br/com/infox/icones/GNU.png)
+![](/app/src/root/login.png)
 
 ###General info
 
