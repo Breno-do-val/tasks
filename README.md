@@ -9,18 +9,27 @@ Android application using Restful API from [DevMasterTeam](http://devmasterteam.
 * [Acknowledgements](#acknowledgements)
 
 ## Screnshoots
-![](/app/src/root/login.png)
-![](/app/src/root/navigation.png)
-![](/app/src/root/register.png)
+![Login](/app/src/root/login.png)
+![Navigation Drawer](/app/src/root/navigation.png)
+![Register new tasks](/app/src/root/register.png)
 
 ### General info
-
+Application developed using Android Architecture Components and applying MVVM (Model-View-ViewModel, software architectural pattern).
 
 ### Technologies and dependencies
-
+ > ROOM - persistence library;
+ > RETROFIT - type-safe HTTP client;
+ > LIVEDATA - observable data holder class and lifecycle aware;
+ > VIEWMODEL - store and manage UI-related data in a lifecycle conscious way;
 
 ### Setup
-
+``
+applicationId "com.example.tasks"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+``
 
 #### Author
 Breno Ribeiro do Val
