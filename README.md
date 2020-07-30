@@ -1,30 +1,32 @@
 # Tasks
 Android application using Restful API from [DevMasterTeam](http://devmasterteam.com/cursoandroid/api) for managing tasks.
 
-##Table of Content
+## Table of Content
 * [General info](#general-info)
 * [Technologies and Dependencies](#technologies-&-dependencies)
 * [Author](#author)
 * [License and copyright](#license-and-copyright)
 * [Acknowledgements](#acknowledgements)
 
-##Screnshoots
+## Screnshoots
 ![](/app/src/root/login.png)
+![](/app/src/root/navigation.png)
+![](/app/src/root/register.png)
 
-###General info
-
-
-###Technologies and dependencies
-
-
-###Setup
+### General info
 
 
-####Author
+### Technologies and dependencies
+
+
+### Setup
+
+
+#### Author
 Breno Ribeiro do Val
 
-####License and copyright
+#### License and copyright
 MIT.
 
-####Acknowledgments
+#### Acknowledgments
 Thanks to Gabriel Ferrari who provided this course available on Udemy.
