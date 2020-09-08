@@ -4,9 +4,8 @@ Android application using Restful API from [DevMasterTeam](http://devmasterteam.
 ## Table of Content
 * [General info](#general-info)
 * [Technologies and Dependencies](#technologies-&-dependencies)
-* [Author](#author)
 * [License and copyright](#license-and-copyright)
-* [Acknowledgements](#acknowledgements)
+* [Acknowledgements](#Acknowledgements)
 
 ## Screnshoots
 ![Login](/app/src/root/login.png)
@@ -31,9 +30,6 @@ Application developed using Android Architecture Components and applying MVVM (M
 `` targetSdkVersion 29 `` 
 `` versionCode 1 ``
 `` versionName "1.0" ``
-
-#### Author
-Breno Ribeiro do Val
 
 #### License and copyright
 MIT.
