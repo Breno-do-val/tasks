@@ -3,11 +3,11 @@ Android application using Restful API from [DevMasterTeam](http://devmasterteam.
 
 ## Table of Content
 * [General info](#general-info)
-* [Technologies and Dependencies](#technologies-&-dependencies)
+* [Technologies and Dependencies](#technologies-and-dependencies)
 * [License and copyright](#license-and-copyright)
-* [Acknowledgements](#Acknowledgements)
+* [Acknowledgements](#Acknowledgments)
 
-## Screnshoots
+## Screenshots
 ![Login](/app/src/root/login.png)
 ![Navigation Drawer](/app/src/root/navigation.png)
 ![Register new tasks](/app/src/root/register.png)
